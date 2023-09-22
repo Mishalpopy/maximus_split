@@ -27,7 +27,17 @@
     padding: 8px;
 
 }
-
+.btnBlackCollection{
+  background-color: rgb(0, 0, 0);
+   
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  margin: 9px;
+  max-width: 168px;
+  padding: 8px;
+}
 .btnBlack:hover{
     background-color: #ffffff;
     color: #000000;

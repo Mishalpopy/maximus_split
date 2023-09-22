@@ -12,29 +12,29 @@ const ProductList = () => {
   const products = [
     {
       id: 1,
-      name: 'Nomad Pouch',
+      name: 'SM SHIRT',
       href: '#',
-      price: '$50',
-      availability: 'White and Black',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-01.jpg',
+      price: '50 AED',
+      availability: 'Clothing',
+      imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2023/01/Saint-maximus-collection-tee.jpg',
       imageAlt: 'White fabric pouch with white zipper, black zipper pull, and black elastic loop.',
     },
     {
       id: 2,
-      name: 'Zip Tote Basket',
+      name: 'GYM SET',
       href: '#',
-      price: '$140',
+      price: '140 AED',
       availability: 'Washed Black',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-02.jpg',
+      imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2023/01/Saint-maximus-collection-set.jpg',
       imageAlt: 'Front of tote bag with washed black canvas body, black straps, and tan leather handles and accents.',
     },
     {
       id: 3,
-      name: 'Medium Stuff Satchel',
+      name: 'TOTE BAG',
       href: '#',
-      price: '$220',
+      price: '220 AED',
       availability: 'Blue',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-03.jpg',
+      imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2023/01/Saint-maximus-collection-tote.jpg',
       imageAlt:
         'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
     },
@@ -55,7 +55,7 @@ const ProductList = () => {
       <p className='section_subHeading'>Check outer exclusive line Saint Maximus.</p>
       
       </div>
-      <button className='btnBlack'>
+      <button className='btnBlackCollection'>
        SHOP NOW
       </button> 
       <div className="bg-white">

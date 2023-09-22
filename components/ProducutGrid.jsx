@@ -73,8 +73,10 @@ function classNames(...classes) {
 export default function Example() {
   return (
     <div className="bg-white py-9">
-      <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden sm:px-6  justify-center items-center text-center ">
         <h2 className="sr-only">Products</h2>
+        <p className='section_subHeading'>Explore Our</p>
+      <h2 className='section_heading pb-9'>BESTSELLERS</h2>
 
         <div className="-mx-px grid grid-cols-2 border-l border-t border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-3">
           {products.map((product) => (
