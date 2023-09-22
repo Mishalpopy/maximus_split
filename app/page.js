@@ -33,13 +33,8 @@ export default function Home() {
  <ExploreCollection />
  <BannerVideo />
 <Partnerships />
-<AbtBannerTop />
-<AboutUs />
-<AbtBanner />
 
-<ProductLeft />
-<ProductDesc />
-<newBanner />
+
  <Footer />
 </mian>
   )
