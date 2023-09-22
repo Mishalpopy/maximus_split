@@ -38,6 +38,11 @@
   max-width: 168px;
   padding: 8px;
 }
+.btnBlackCollection:hover{
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.5s;
+}
 .btnBlack:hover{
     background-color: #ffffff;
     color: #000000;
