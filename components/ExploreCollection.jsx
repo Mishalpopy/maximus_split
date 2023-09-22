@@ -59,7 +59,7 @@ const ProductList = () => {
        SHOP NOW
       </button> 
       <div className="bg-white">
-      <div className="mx-auto max-w-7xl overflow-hidden   sm:py-24 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden     ">
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
           {products.map((product) => (
             <a key={product.id} href={product.href} className="group text-sm">
@@ -67,7 +67,7 @@ const ProductList = () => {
                 <img
                   src={product.imageSrc}
                   alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-start"
                 />
               </div>
               <h3 className="mt-4 font-medium text-gray-900">{product.name}</h3>
