@@ -25,7 +25,7 @@ const products = [
   {
     id: 3,
     name: 'BLACK SHOES NIKE',
-    price: '$15',
+    price: '15 AED',
     rating: 5,
     reviewCount: 'Clothes | Footwear',
     imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2022/12/shop-list-filter-19.jpg',
@@ -55,7 +55,7 @@ const products = [
   {
     id: 6,
     name: 'BLACK SHOES NIKE',
-    price: '$15',
+    price: '15 AED',
     rating: 5,
     reviewCount: 'Clothes | Footwear',
     imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2022/12/shop-list-filter-19.jpg',
@@ -72,7 +72,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="bg-white py-9">
+    <div className="bg-white py-9 ">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6  justify-center items-center text-center ">
         <h2 className="sr-only">Products</h2>
         <p className='section_subHeading'>Explore Our</p>
@@ -88,19 +88,19 @@ export default function Example() {
                   className="h-full w-full object-cover object-center"
                 />
               </div>
-              <div className="pt-10 pb-4 text-center">
-                <h3 className="text-sm font-medium text-gray-900">
+              <div className="pt-10 pb-4 text-left">
+                <h3 className="text-sm font-bold text-gray-900">
                   <a href={product.href}>
-                    <span aria-hidden="true" className="absolute inset-0" />
+                    <span aria-hidden="true" className="absolute inset-0 " />
                     {product.name}
                   </a>
                 </h3>
-                <div className="mt-3 flex flex-col items-center">
+                <div className="mt-3 flex flex-col items-left">
                   <p className="sr-only">{product.rating} out of 5 stars</p>
       
                   <p className="mt-1 text-sm text-gray-500 font-bold">{product.reviewCount} </p>
                 </div>
-                <p className="mt-4 text-base font-medium text-gray-900">{product.price}</p>
+                <p className="mt-4 text-base font-bold text-gray-900">{product.price}</p>
               </div>
             </div>
           ))}
