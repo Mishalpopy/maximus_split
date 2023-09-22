@@ -29,14 +29,14 @@ export default function Home() {
  <Message />
  <ShopFor />
 
-<ExploreProducts /> 
+ <ProducutGrid />
  <ExploreCollection />
  <BannerVideo />
 <Partnerships />
 <AbtBannerTop />
 <AboutUs />
 <AbtBanner />
-<ProducutGrid />
+
 <ProductLeft />
 <ProductDesc />
 <newBanner />

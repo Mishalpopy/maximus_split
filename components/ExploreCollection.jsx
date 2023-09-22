@@ -9,10 +9,42 @@ const ProductList = () => {
     backgroundPosition: 'top left',
     backgroundRepeat: 'no-repeat',
   };
+  const products = [
+    {
+      id: 1,
+      name: 'Nomad Pouch',
+      href: '#',
+      price: '$50',
+      availability: 'White and Black',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-01.jpg',
+      imageAlt: 'White fabric pouch with white zipper, black zipper pull, and black elastic loop.',
+    },
+    {
+      id: 2,
+      name: 'Zip Tote Basket',
+      href: '#',
+      price: '$140',
+      availability: 'Washed Black',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-02.jpg',
+      imageAlt: 'Front of tote bag with washed black canvas body, black straps, and tan leather handles and accents.',
+    },
+    {
+      id: 3,
+      name: 'Medium Stuff Satchel',
+      href: '#',
+      price: '$220',
+      availability: 'Blue',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-07-product-03.jpg',
+      imageAlt:
+        'Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch.',
+    },
+    // More products...
+  ]
+  
   return (
-    <div className='exploreCollectionSec'>
-            <div className='min-h-screen flex bg-gray-100'>
-            <div className='w-1/2 flex ' style={exploreCollectionImgBanner}>
+    <div className='exploreCollectionSec bg-white'>
+            <div className='min-h-screen flex bg-gray-100 bg-white'>
+            <div className='w-1/2 flex bg-white' style={exploreCollectionImgBanner}>
 
             </div>
             <div className="w-1/2 flex px-28 border border-gray-200/25  " >
@@ -26,50 +58,26 @@ const ProductList = () => {
       <button className='btnBlack'>
        SHOP NOW
       </button> 
-      <div className='flex justify-evenly explore_product_list'>
-        <div className='explore_product_list1 pr-9'>
-        <div className='explore_product_list_ImageArea'>
-          <img src='https://abdulk30.sg-host.com/maximus/wp-content/uploads/2023/01/Saint-maximus-collection-tee.jpg'  />
-         </div>
-        <div className='explore_product_list_ContentArea'>
-          <h3 className='explore_product_list_ContentArea_heading font-bold'>SM SHIRT</h3>
-          <p className='explore_product_list_ContentArea_type'>Clothing</p>
-          <div className='explore_product_list_ContentArea_prcing'>
-          <h3 className='explore_product_list_ContentArea_heading font-bold'>55.00 AED</h3>
-          <i></i>
-          </div>
+      <div className="bg-white">
+      <div className="mx-auto max-w-7xl overflow-hidden   sm:py-24 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
+          {products.map((product) => (
+            <a key={product.id} href={product.href} className="group text-sm">
+              <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden  bg-gray-100 group-hover:opacity-75">
+                <img
+                  src={product.imageSrc}
+                  alt={product.imageAlt}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <h3 className="mt-4 font-medium text-gray-900">{product.name}</h3>
+              <p className="italic text-gray-500">{product.availability}</p>
+              <p className="mt-2 font-medium text-gray-900">{product.price}</p>
+            </a>
+          ))}
         </div>
-
-
-        </div>
-        <div className='explore_product_list2 pr-9' >
-        <div className='explore_product_list_ImageArea'>
-          <img src='https://abdulk30.sg-host.com/maximus/wp-content/uploads/2023/01/Saint-maximus-collection-set.jpg'  />
-         </div>
-        <div className='explore_product_list_ContentArea'>
-          <h3 className='explore_product_list_ContentArea_heading font-bold'>GYM SET</h3>
-          <p className='explore_product_list_ContentArea_type'>Clothing</p>
-          <div className='explore_product_list_ContentArea_prcing'>
-          <h3 className='explore_product_list_ContentArea_heading font-bold'>165.00 AED</h3>
-          <i></i>
-          </div>
-        </div>
-        </div>
-        <div className='explore_product_list3 pr-9'>
-        <div className='explore_product_list_ImageArea'>
-          <img src='https://abdulk30.sg-host.com/maximus/wp-content/uploads/2023/01/Saint-maximus-collection-tote.jpg'  />
-         </div>
-        <div className='explore_product_list_ContentArea'>
-          <h3 className='explore_product_list_ContentArea_heading font-bold'>TOTE BAG</h3>
-          <p className='explore_product_list_ContentArea_type'>Accessories</p>
-          <div className='explore_product_list_ContentArea_prcing'>
-          <h3 className='explore_product_list_ContentArea_heading font-bold'>50.00 AED</h3>
-          <i></i>
-          </div>
-        </div>
-        </div>
-
       </div>
+    </div>
       </div>
     </div>
             </div>

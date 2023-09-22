@@ -32,6 +32,36 @@ const products = [
     imageAlt: 'TODO',
     href: '#',
   },
+  {
+    id: 4,
+    name: 'BELT GREY BAG',
+    price: '50.00 AED',
+    rating: 5,
+    reviewCount: 'Bags | Sport',
+    imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2022/12/shop-list-sidebar-23.jpg',
+    imageAlt: 'TODO',
+    href: '#',
+  },
+  {
+    id: 5,
+    name: 'GREY ADIDAS',
+    price: '45.00 AED',
+    rating: 5,
+    reviewCount: 'Clothes | Footwear',
+    imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2022/12/shop-list-filter-13.jpg',
+    imageAlt: 'TODO',
+    href: '#',
+  },
+  {
+    id: 6,
+    name: 'BLACK SHOES NIKE',
+    price: '$15',
+    rating: 5,
+    reviewCount: 'Clothes | Footwear',
+    imageSrc: 'https://abdulk30.sg-host.com/maximus/wp-content/uploads/2022/12/shop-list-filter-19.jpg',
+    imageAlt: 'TODO',
+    href: '#',
+  },
   
   // More products...
 ]
@@ -42,11 +72,11 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="bg-white">
+    <div className="bg-white py-9">
       <div className="mx-auto max-w-7xl overflow-hidden sm:px-6 lg:px-8">
         <h2 className="sr-only">Products</h2>
 
-        <div className="-mx-px grid grid-cols-2 border-l border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-3">
+        <div className="-mx-px grid grid-cols-2 border-l border-t border-gray-200 sm:mx-0 md:grid-cols-3 lg:grid-cols-3">
           {products.map((product) => (
             <div key={product.id} className="group relative border-r border-b border-gray-200 p-4 sm:p-6">
               <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75">
